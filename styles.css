@@ -1,0 +1,78 @@
+:root {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+img, picture, video, svg, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+iframe {
+  min-height: 60vh;
+}
+.booking-iframe-wrapper {
+  min-height: 60vh;
+}
+.booking-iframe {
+  min-height: 60vh;
+}
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .nav-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 0.85rem;
+  }
+  .hero-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .hero-title {
+    font-size: clamp(2.2rem, 6vw, 3rem);
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .section-padding {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .booking-iframe-wrapper {
+    min-height: 72vh;
+  }
+  .booking-iframe {
+    min-height: 72vh;
+  }
+  .px-8 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .py-24 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .booking-iframe {
+    min-height: 68vh;
+  }
+}
